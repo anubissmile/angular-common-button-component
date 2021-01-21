@@ -1,0 +1,6 @@
+<button type="button"
+        class="m-1 btn btn-primary"
+        [ngClass]="configureButtonTheme(buttonModel)"
+        [attr.data-index]="buttonModel.index"
+        [disabled]="buttonModel.isDisable"
+        (click)="onButtonClick(buttonModel)">{{buttonModel.name}}</button>
